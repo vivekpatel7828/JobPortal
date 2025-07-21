@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build files (if any)
+dist/
+build/
+
+# Coverage from testing tools like Jest
+coverage/
+
+# Database files
+*.sqlite
+*.db
+
+# PM2 process logs
+pids/
+*.pid
+*.seed
+
+# IDE/editor settings (optional but good to ignore)
+.vscode/
+.idea/

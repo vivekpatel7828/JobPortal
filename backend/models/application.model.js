@@ -1,7 +1,7 @@
 import { application } from "express";
 import mongoose, { Schema } from "mongoose";
 
-const applicationSchema = new mongoos.Schema({
+const applicationSchema = new mongoose.Schema({
     job:{
         type :mongoose.Schema.Types.ObjectId,
         ref:'Job',
@@ -14,8 +14,8 @@ const applicationSchema = new mongoos.Schema({
     },
     status:{
         type:String,
-        enum:['Pending','Accepted','Rejected'],
-        default:'Pending'
+        enum:['pending','accepted','rejected'],
+        default:'pending'
     }
 },{timestamps:true});
 
